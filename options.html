@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Cursor Options</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <h1>カーソル画像をアップロード</h1>
+
+  <div class="controls">
+
+    <div class="preview">
+      <p>Preview</p>
+      <img
+        id="preview"
+        src=""
+        width="40"
+        height="40"
+        alt="preview"
+      />
+      <p><br></p>
+      <input
+        type="file"
+        id="fileInput"
+        accept="image/png,image/x-icon,.ico,.cur,.ani,image/gif,image/svg+xml"
+        class="file-input"
+      />
+
+      <label class="size-label">
+        <br>サイズ:
+        <input
+          type="number"
+          id="sizeInput"
+          min="1"
+          max="128"
+          value="40"
+        />
+        px
+      </label>
+
+
+    </div>
+  </div>
+
+  <p id="status"></p>
+  <script src="options.js"></script>
+</body>
+</html>
